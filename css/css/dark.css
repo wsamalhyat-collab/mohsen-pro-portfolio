@@ -1,0 +1,37 @@
+/* ===== Dark Mode ===== */
+
+body.dark-mode{
+    background:#0f172a;
+    color:#f8fafc;
+}
+
+body.dark-mode .header{
+    background:#1e293b;
+}
+
+body.dark-mode .card{
+    background:#1e293b;
+    color:#ffffff;
+}
+
+body.dark-mode footer{
+    background:#020617;
+}
+
+body.dark-mode nav a{
+    color:#ffffff;
+}
+
+body.dark-mode nav a:hover{
+    color:#38bdf8;
+}
+
+body.dark-mode .btn-outline{
+    border-color:#38bdf8;
+    color:#38bdf8;
+}
+
+body.dark-mode .btn-outline:hover{
+    background:#38bdf8;
+    color:#0f172a;
+}
