@@ -1,7 +1,9 @@
+/* ===================================
+   Mohsen Pro Portfolio
+   Main JavaScript
+=================================== */
 
-// ===== Mohsen Pro Portfolio JS =====
-
-// Smooth scroll for navigation links
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener("click", function (e) {
         e.preventDefault();
@@ -16,29 +18,76 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
     });
 });
 
-// Simple active link highlight
+// Active Navigation
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav a");
 
 window.addEventListener("scroll", () => {
+
     let current = "";
 
     sections.forEach(section => {
-        const sectionTop = section.offsetTop;
 
-        if (pageYOffset >= sectionTop - 60) {
+        const sectionTop = section.offsetTop - 100;
+
+        if (window.scrollY >= sectionTop) {
+
             current = section.getAttribute("id");
+
         }
+
     });
 
     navLinks.forEach(link => {
+
         link.classList.remove("active");
 
         if (link.getAttribute("href") === "#" + current) {
+
             link.classList.add("active");
+
         }
+
     });
+
 });
 
-// Contact quick actions
-console.log("Mohsen Portfolio Loaded Successfully 🚀");
+// Scroll To Top Button
+const topButton = document.createElement("button");
+
+topButton.innerHTML = "↑";
+
+topButton.id = "topButton";
+
+document.body.appendChild(topButton);
+
+topButton.style.display = "none";
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 300) {
+
+        topButton.style.display = "block";
+
+    } else {
+
+        topButton.style.display = "none";
+
+    }
+
+});
+
+topButton.addEventListener("click", () => {
+
+    window.scrollTo({
+
+        top: 0,
+
+        behavior: "smooth"
+
+    });
+
+});
+
+// Website Loaded
+console.log("Mohsen Pro Portfolio Loaded Successfully 🚀");
