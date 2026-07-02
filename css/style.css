@@ -1,121 +1,240 @@
-/* ===== Mohsen Pro Portfolio ===== */
+/* ===================================
+   Mohsen Pro Portfolio
+   Version 1.0
+=================================== */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;800&display=swap');
+
+/* Variables */
+
+:root{
+
+--primary:#2563eb;
+--secondary:#1e40af;
+--accent:#06b6d4;
+--dark:#0f172a;
+--light:#f8fafc;
+--white:#ffffff;
+--gray:#64748b;
+
+--radius:12px;
+
+--shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+/* Reset */
 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+
+}
+
+html{
+
+scroll-behavior:smooth;
+
 }
 
 body{
-    font-family:Arial, sans-serif;
-    background:#f5f7fa;
-    color:#222;
-    line-height:1.8;
+
+font-family:'Cairo',sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.8;
+
 }
+
+/* Container */
 
 .container{
-    width:90%;
-    max-width:1200px;
-    margin:auto;
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
 }
 
-header{
-    background:#0d6efd;
-    color:#fff;
-    position:sticky;
-    top:0;
-    z-index:1000;
-    padding:20px 0;
+/* Header */
+
+.header{
+
+position:sticky;
+top:0;
+background:white;
+box-shadow:var(--shadow);
+z-index:999;
+
 }
 
-header .container{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    flex-wrap:wrap;
+.header .container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+
+}
+
+/* Logo */
+
+.logo{
+
+font-size:30px;
+font-weight:800;
+text-decoration:none;
+color:var(--primary);
+
+}
+
+.logo span{
+
+color:var(--accent);
+
+}
+
+/* Navigation */
+
+nav ul{
+
+display:flex;
+gap:25px;
+list-style:none;
+
 }
 
 nav a{
-    color:#fff;
-    text-decoration:none;
-    margin:0 10px;
-    font-weight:bold;
+
+text-decoration:none;
+color:var(--dark);
+font-weight:700;
+transition:.3s;
+
 }
 
 nav a:hover{
-    color:#ffd43b;
+
+color:var(--primary);
+
 }
 
-section{
-    padding:80px 0;
-}
+/* Hero */
 
 #home{
-    text-align:center;
-    background:#ffffff;
+
+padding:120px 0;
+text-align:center;
+
+}
+
+#home h1{
+
+font-size:55px;
+margin-bottom:15px;
+
 }
 
 #home h2{
-    font-size:40px;
-    margin-bottom:20px;
+
+font-size:28px;
+color:var(--primary);
+margin-bottom:25px;
+
 }
 
 #home p{
-    max-width:700px;
-    margin:20px auto;
+
+max-width:700px;
+margin:auto;
+margin-bottom:35px;
+
 }
 
-#home a{
-    display:inline-block;
-    margin:10px;
-    padding:14px 28px;
-    background:#0d6efd;
-    color:white;
-    border-radius:8px;
-    text-decoration:none;
-    transition:.3s;
+/* Buttons */
+
+.btn{
+
+display:inline-block;
+padding:14px 32px;
+border-radius:var(--radius);
+text-decoration:none;
+font-weight:bold;
+transition:.3s;
+
 }
 
-#home a:hover{
-    background:#084298;
+.btn-primary{
+
+background:var(--primary);
+color:white;
+
 }
 
-#services ul{
-    list-style:none;
+.btn-primary:hover{
+
+background:var(--secondary);
+
 }
 
-#services li{
-    background:white;
-    margin:15px 0;
-    padding:20px;
-    border-radius:10px;
-    box-shadow:0 4px 10px rgba(0,0,0,.08);
+.btn-outline{
+
+border:2px solid var(--primary);
+color:var(--primary);
+
 }
+
+.btn-outline:hover{
+
+background:var(--primary);
+color:white;
+
+}
+
+/* Sections */
+
+section{
+
+padding:90px 0;
+
+}
+
+section h2{
+
+text-align:center;
+font-size:38px;
+margin-bottom:45px;
+
+}
+
+/* Cards */
+
+.card{
+
+background:white;
+padding:30px;
+border-radius:var(--radius);
+box-shadow:var(--shadow);
+transition:.3s;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+}
+
+/* Footer */
 
 footer{
-    background:#111827;
-    color:white;
-    text-align:center;
-    padding:25px;
-}
 
-@media(max-width:768px){
-
-header .container{
-flex-direction:column;
-}
-
-nav{
-margin-top:15px;
-}
-
-nav a{
-display:block;
-margin:10px 0;
-}
-
-#home h2{
-font-size:28px;
-}
+background:var(--dark);
+color:white;
+padding:30px;
+text-align:center;
 
 }
