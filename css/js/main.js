@@ -90,4 +90,23 @@ topButton.addEventListener("click", () => {
 });
 
 // Website Loaded
-console.log("Mohsen Pro Portfolio Loaded Successfully 🚀");
+console.log("Mohsen Pro Portfolio Loaded Successfully 🚀");// Dark Mode Toggle
+const themeButton = document.createElement("button");
+
+themeButton.innerHTML = "🌙";
+
+themeButton.id = "themeButton";
+
+document.body.appendChild(themeButton);
+
+themeButton.style.position = "fixed";
+themeButton.style.left = "20px";
+themeButton.style.bottom = "20px";
+themeButton.style.padding = "12px";
+themeButton.style.borderRadius = "50%";
+themeButton.style.border = "none";
+themeButton.style.cursor = "pointer";
+
+themeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+});
