@@ -1,0 +1,117 @@
+/* ===================================
+   Responsive Design
+=================================== */
+
+/* أجهزة لوحية */
+@media (max-width: 992px){
+
+.container{
+width:92%;
+}
+
+#home h1{
+font-size:42px;
+}
+
+#home h2{
+font-size:24px;
+}
+
+section h2{
+font-size:32px;
+}
+
+}
+
+/* الهواتف */
+@media (max-width:768px){
+
+.header .container{
+
+flex-direction:column;
+gap:20px;
+
+}
+
+nav ul{
+
+flex-direction:column;
+align-items:center;
+gap:15px;
+
+}
+
+#home{
+
+padding:80px 0;
+
+}
+
+#home h1{
+
+font-size:34px;
+
+}
+
+#home h2{
+
+font-size:22px;
+
+}
+
+.btn{
+
+display:block;
+width:100%;
+margin:10px auto;
+
+}
+
+.card{
+
+margin-bottom:20px;
+
+}
+
+}
+
+/* الهواتف الصغيرة */
+@media (max-width:480px){
+
+body{
+
+font-size:15px;
+
+}
+
+.logo{
+
+font-size:24px;
+
+}
+
+#home h1{
+
+font-size:28px;
+
+}
+
+#home h2{
+
+font-size:18px;
+
+}
+
+section{
+
+padding:60px 0;
+
+}
+
+section h2{
+
+font-size:28px;
+
+}
+
+}
