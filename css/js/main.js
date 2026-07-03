@@ -110,3 +110,21 @@ themeButton.style.cursor = "pointer";
 themeButton.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
+// Scroll Reveal Animation
+
+const reveals = document.querySelectorAll(".reveal");
+
+function revealOnScroll() {
+    reveals.forEach((element) => {
+        const windowHeight = window.innerHeight;
+        const elementTop = element.getBoundingClientRect().top;
+        const visiblePoint = 100;
+
+        if (elementTop < windowHeight - visiblePoint) {
+            element.classList.add("active");
+        }
+    });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+revealOnScroll();
