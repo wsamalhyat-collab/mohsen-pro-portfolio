@@ -47,3 +47,39 @@ body.dark-mode .btn-outline:hover{
     opacity: 1;
     transform: translateY(0);
 }
+/* ===== Portfolio ===== */
+
+.portfolio-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+.portfolio-card{
+    background:#fff;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(0,0,0,.2);
+}
+
+.portfolio-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.portfolio-card h3{
+    padding:20px 20px 10px;
+}
+
+.portfolio-card p{
+    padding:0 20px 20px;
+    color:#666;
+}
