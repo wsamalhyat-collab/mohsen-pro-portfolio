@@ -238,3 +238,13 @@ padding:30px;
 text-align:center;
 
 }
+.profile-image{
+    width:220px;
+    height:220px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border:5px solid #2563eb;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
