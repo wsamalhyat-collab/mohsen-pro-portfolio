@@ -338,3 +338,29 @@ nav a{
 nav a:hover{
     color:#2563eb;
 }
+.back-top{
+position:fixed;
+bottom:20px;
+left:20px;
+width:50px;
+height:50px;
+background:#2563eb;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+text-decoration:none;
+font-size:22px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}html{
+scroll-behavior:smooth;
+}
+
+img{
+transition:.4s;
+}
+
+img:hover{
+transform:scale(1.05);
+   }
